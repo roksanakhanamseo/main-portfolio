@@ -3,6 +3,10 @@ import img1 from "../public/estate.jpg";
 import img2 from "../public/ticket.jpg";
 import img3 from "../public/flight.jpg";
 import ProjectPageHeader from "../components/ProjectPageHeader";
+export const metadata = {
+  title: "Projects",
+  description: "Projects Showing",
+};
 const projectsArray = [
   {
     name: "MernEstate",

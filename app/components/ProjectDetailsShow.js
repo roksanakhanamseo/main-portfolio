@@ -5,24 +5,27 @@ import { MdCloseFullscreen } from "react-icons/md";
 import { handleProjectDetailsShow } from "../handlers/handlers";
 const ProjectDetailsShow = ({ projects }) => {
   return (
-    <div id={projects.name} className="hidden absolute top-0 left-0 z-50">
+    <div
+      id={projects.name}
+      className="hidden fixed backdrop-blur pt-20 w-full overflow-x-hidden overflow-y-scroll inset-0 z-50"
+    >
       {" "}
-      <div className="flex justify-center  absolute inset-0  w-full h-full z-40 backdrop-blur items-center">
+      <div className="w-full mx-auto flex justify-center">
         <div
           onClick={() => handleProjectDetailsShow(projects.name)}
-          className="absolute right-10 text-2xl font-bold text-white hover:underline active:text-base transition-all duration-200 top-10 z-50"
+          className="absolute right-5 top-5 md:right-10 md:top-10  text-2xl mx-auto font-bold text-white hover:underline active:text-base transition-all duration-200 z-50"
         >
           <MdCloseFullscreen />
         </div>
-        <div className="relative rounded-lg w-[90vw] sm:w-[80vw] md:w-[50vw] top-54 top-24 h-fit  z-50 inset-0 text-green-50 bg-[#171616]">
+        <div className="relative rounded-lg shrink-0 w-[80vw] md:w-[50vw] h-fit  z-50  text-green-50 bg-[#171616]">
           <div
             style={{
               backgroundImage: `url(${projects.img.src})`,
               backgroundSize: "cover",
               borderRadius: "10px",
               backgroundPosition: "center",
-              height: "60vh",
-              width: "50vw",
+              height: "40vh",
+              // width: "50vw",
               objectFit: "cover",
             }}
           ></div>

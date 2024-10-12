@@ -1,3 +1,4 @@
+"use client";
 import { SendmailTransport } from "../handlers/handlers";
 import { SnackbarProvider } from "notistack";
 
@@ -12,7 +13,7 @@ const Contact = () => {
           </div>
           <div className="sm:text-xl  w-[50vw] mx-auto text-center py-5 font-thin">
             Shoot me an email if you want to connect! You can also find me on
-            Linkedin or Twitter if that's more your speed.
+            Linkedin or Twitter if that&apos;s more your speed.
           </div>
 
           <form autoComplete="on" className="mx-auto w-[80vw] md:w-[50vw]">
