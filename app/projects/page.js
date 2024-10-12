@@ -10,6 +10,7 @@ export const metadata = {
 const projectsArray = [
   {
     name: "MernEstate",
+    github: "https://github.com/roksanakhanamseo/MernEstate.git",
     link: "https://rt-estate.vercel.app/",
     shortDescription:
       "Discover your dream home with us. At MernEstate, we offer a curated selection of premium properties tailored to meet your unique lifestyle needs.",
@@ -20,6 +21,8 @@ const projectsArray = [
   },
   {
     name: "RockGaan",
+
+    github: "https://github.com/roksanakhanamseo/ticket-front.git",
     link: "https://flight-wine.vercel.app/",
     shortDescription:
       "Experience the thrill of live music with ease. At [Your Concert Ticket Website], we bring you the best seats to the hottest concerts.",
@@ -31,6 +34,8 @@ const projectsArray = [
   },
   {
     name: "MoveSeeks",
+
+    github: "https://github.com/roksanakhanamseo/flight.git",
     link: "https://flight-wine.vercel.app/",
     shortDescription: "Find and book the best flights at unbeatable prices.",
     description:

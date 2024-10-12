@@ -52,13 +52,18 @@ const ProjectDetailsShow = ({ projects }) => {
                 <div className="mt-1 pr-1">
                   <FaGithub />
                 </div>
-                <div className="">Source Code</div>
+                <a href={projects.github} target="_black" className="">
+                  Source Code
+                </a>
               </div>
               <div className="flex text-green-300 cursor-pointer hover:underline ml-5">
                 <div className="mt-1 text-xl pr-1">
                   <IoIosExit />
                 </div>
-                <div className=""> Live</div>
+                <a target="_blank" href={projects.link} className="">
+                  {" "}
+                  Live
+                </a>
               </div>
             </div>
           </div>
