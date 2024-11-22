@@ -10,7 +10,7 @@ const TextParallaxContentExample = () => {
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1467664631004-58beab1ece0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="I'm a Full Stack Developer"
-        heading="Hey, I'm Roksana."
+        heading="Hey, I'm Tanvir."
       >
         <ExampleContent
           left="From Curiosity to Craftsmanship."
