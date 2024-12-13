@@ -26,11 +26,12 @@ export default function RootLayout({ children }) {
       <body
         className={` overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased bg-[#111] text-[rgb(248,248,255)]`}
       >
+        <GoogleTagManager gaId="W5GHNE0GRZ" />
+
         <Sidebar />
         <Navbar />
         {children}
       </body>
-      <GoogleTagManager gtmId="W5GHNE0GRZ" />
     </html>
   );
 }
