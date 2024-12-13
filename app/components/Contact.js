@@ -4,10 +4,10 @@ import { SnackbarProvider } from "notistack";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="left-8 relative">
       <SnackbarProvider />{" "}
-      <div className="relative top-24 left-20">
-        <div className="max-w-[80%] mx-auto md:w-[calc(100%-5rem)] overflow-x-hidden bg-[#111] ">
+      <div className="relative top-24 px-5">
+        <div className="max-w-[80vw] mx-auto md:w-[calc(100%-5rem)] overflow-x-hidden bg-[#111] ">
           <div className="sm:mt-10 sm:text-5xl text-4xl md:text-7xl font-bold text-center  ">
             Contact <span className="text-green-400">.</span>
           </div>
