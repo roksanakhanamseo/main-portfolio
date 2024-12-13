@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Sidebar from "./components/Sidebar";
 
 const geistSans = localFont({
@@ -20,19 +21,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "G-W5GHNE0GRZ");
   return (
     <html lang="en">
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-W5GHNE0GRZ"
-      ></script>
-
       <body
         className={` overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased bg-[#111] text-[rgb(248,248,255)]`}
       >
@@ -40,6 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
       </body>
+      <GoogleTagManager gtmId="W5GHNE0GRZ" />
     </html>
   );
 }
