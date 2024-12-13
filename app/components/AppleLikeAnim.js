@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import Reveal from "./Reveal";
+import Link from "next/link";
 
 const TextParallaxContentExample = () => {
   return (
@@ -40,12 +41,15 @@ const TextParallaxContentExample = () => {
           rightTwo="I invite you to explore my portfolio and see the diverse range of projects I’ve brought to life. Let's collaborate to turn your ideas into reality! Contact me today to get started."
         />
       </TextParallaxContent>
-      <button className="rounded-2xl flex gap-2 mb-44 w-40 relative left-[40%] border-2 border-green-400 bg-green-400 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+      <Link
+        href={"/projects"}
+        className="rounded-2xl flex gap-2 mb-44 w-40 relative left-[40%] border-2 border-green-400 bg-green-400 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+      >
         Projects
         <span className="text-xl hover:rotate-45">
           <FiArrowUpRight />
         </span>
-      </button>
+      </Link>
     </div>
   );
 };

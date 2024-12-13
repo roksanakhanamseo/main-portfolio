@@ -4,10 +4,10 @@ import { SnackbarProvider } from "notistack";
 
 const Contact = () => {
   return (
-    <div className="left-8 relative">
+    <div className="left-8 max-w-[90%] relative">
       <SnackbarProvider />{" "}
-      <div className="relative top-24 px-5">
-        <div className="max-w-[80vw] mx-auto md:w-[calc(100%-5rem)] overflow-x-hidden bg-[#111] ">
+      <div className="relative  top-24 px-5">
+        <div className="max-w-[80%] mx-auto  md:w-[calc(100%-5rem)] overflow-x-hidden bg-[#111] ">
           <div className="sm:mt-10 sm:text-5xl text-4xl md:text-7xl font-bold text-center  ">
             Contact <span className="text-green-400">.</span>
           </div>
@@ -50,7 +50,7 @@ const Contact = () => {
               </label>
             </div>
             <button
-              className="rounded-2xl w-full border-2  border-green-400 bg-green-400 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+              className="rounded-2xl min-w-max sm:w-full border-2  border-green-400 bg-green-400 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
               onClick={(e) => SendmailTransport(e)}
             >
               Send

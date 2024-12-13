@@ -4,16 +4,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 
-// const downloadFileAtURL = () => {
-//   const url = "/tanvir.pdf"; // replace with your file path or URL
-//   const aTag = document.createElement("a");
-//   aTag.href = url;
-//   aTag.setAttribute("download", "/tanvir.pdf");
-//   document.body.appendChild(aTag);
-//   aTag.click();
-//   aTag.remove();
-// };
-
 const handleConnectLink = (link) => {
   window.open(link, "_blank");
 };
@@ -24,21 +14,32 @@ const Navbar = () => {
         <div className="flex gap-6 cursor-pointer select-none items-center ml-3 h-full ">
           <div
             onClick={() =>
+              handleConnectLink("https://github.com/tanviranjum0/")
+            }
+            className="text-2xl select-none hover:text-green-300 text-white"
+          >
+            <FaGithub />
+          </div>
+          <div
+            onClick={() =>
               handleConnectLink(
                 "https://www.linkedin.com/in/tanvir-anjum-649288312/"
               )
             }
             className="text-2xl select-none hover:text-green-300 text-white"
           >
-            <FaGithub />
-          </div>
-          <div className="text-2xl select-none hover:text-green-300 text-white">
             <FaLinkedin />
           </div>
-          <div className="text-2xl select-none hover:text-green-300 text-white">
+          <div
+            onClick={() => handleConnectLink("https://react.dev/")}
+            className="text-2xl select-none hover:text-green-300 text-white"
+          >
             <FaReact />
           </div>
-          <div className="text-2xl select-none hover:text-green-300 text-white">
+          <div
+            onClick={() => handleConnectLink("https://x.com/AnjumTanvi87406")}
+            className="text-2xl select-none hover:text-green-300 text-white"
+          >
             <FaTwitterSquare />
           </div>
         </div>
