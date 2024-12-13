@@ -22,6 +22,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-W5GHNE0GRZ"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-W5GHNE0GRZ');
+      </script>
       <body
         className={` overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased bg-[#111] text-[rgb(248,248,255)]`}
       >
