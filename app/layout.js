@@ -1,9 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Sidebar from "./components/Sidebar";
-// import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased bg-[#111] text-[rgb(248,248,255)]`}
       >
-        <GoogleTagManager gaId="W5GHNE0GRZ" />
+        <GoogleAnalytics gaId="G-W5GHNE0GRZ" />
         <Sidebar />
         <Navbar />
         {children}
