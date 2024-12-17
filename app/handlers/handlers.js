@@ -22,7 +22,7 @@ export const SendmailTransport = async (e) => {
     }),
   });
   const data = await result.json();
-  console.log(data);
+  // console.log(data);
   if (data.Message == "Message Sent") {
     await enqueueSnackbar("Message sent successfully!");
     document.getElementById("email").value = "";
